@@ -338,6 +338,80 @@ nav ul li a:hover {
 
 
     @media (min-width: 319px) and (max-width: 800px) {
+
+        .hero{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 40%;
+    height: 130vh;
+}
+
+.hero > .container{
+    display: flex;
+    max-width: 40rem;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero > .container p{
+    text-align: center;
+    width: 350px;
+    color: #a7bed8;
+    
+}
+
+.hero > .container .decor{
+    margin-block-start: 35px;
+}
+
+.hero > .container h1{
+    margin-block-start:  0.67em;
+    color: #ffffff;
+} 
+
+.hero > .container h2{
+    margin-block-end: 0.67em;
+    color: #ffffff;
+}
+
+/* Hero buttons */
+.hero-button{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.hero > .container button{
+    margin-top: 4rem;
+    padding: 25px;
+    width: 350px;
+    background-color:#162e4e;
+    border: none;
+    text-decoration: none;
+    color: #a7bed8;
+    font-weight: normal;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.hero > .container button:hover {
+    background-color: #183c6b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px #0c2442;
+}
+
+.hero-button a {
+    text-decoration: none;
+    color: #a7bed8;
+    
+}
+
      
     
       nav {
@@ -396,30 +470,14 @@ nav ul {
     transition: all 0.3s ease;
 }
 
-.hero{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 40% 30%;
-    height: 100vh;
-}
-
-.hero-button{
-    display: flex;
-    
-    gap: 25px;
-}
 
 
 
     }
 
     @media (min-width: 800px) and (max-width: 1200px) {
-      body {
-        background-color: powderblue;
-      }
-
-      .hero{
+      
+    .hero{
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -503,16 +561,5 @@ nav ul {
 
 
 
-    }
+}
 
-    @media (min-width: 1201px) and (max-width: 1600px) {
-      body {
-        background-color: limegreen;
-      }
-    }
-
-    @media (min-width: 1601px) {
-      body {
-        background-color: seagreen;
-      }
-    }
