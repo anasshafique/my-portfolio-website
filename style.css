@@ -338,17 +338,12 @@ nav ul li a:hover {
 
 
     @media (min-width: 319px) and (max-width: 800px) {
-      body {
-        background-color: lightsalmon;
-      }
+     
     
       nav {
     position: fixed;
-   
     display: flex;
     flex-direction: column;
-    
-    
     padding: 20px 60px;
     background-color:#0C2C55;
 }
@@ -367,6 +362,54 @@ nav ul {
     display: flex;
     gap: 40px;
 }
+
+
+
+.projects-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+   
+}
+
+.contact-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    gap: 50px;
+    padding-top: 50px;
+}
+
+.contact-box {
+    padding: 25px;
+    width: 350px; /* uniform width */
+    background-color: #162e4e;
+    color: #a7bed8;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40% 30%;
+    height: 100vh;
+}
+
+.hero-button{
+    display: flex;
+    
+    gap: 25px;
+}
+
 
 
     }
