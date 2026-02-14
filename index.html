@@ -12,12 +12,14 @@
 <header>
     <nav>
         <div class="logo">Anas Shafiq</div> <!-- site logo -->
-        <ul> <!-- navigation links -->
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+
+
+        <ul id="nav-menu"> <!-- navigation links -->
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 </header>
@@ -25,10 +27,10 @@
 <main>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="container">
 
-            <p> ⬩ Welcome to my portfolio ⬩ </p>
+            <p class="section-label">⬩ Welcome to my portfolio ⬩</p>
 
             <p class="decor">꧁⎝ 𓆩༺✧༻𓆪 ⎠꧂</p> <!-- decorative text -->
 
@@ -40,43 +42,51 @@
             with experience in real-world projects.</p>
 
             <div class="hero-button">
-                <button>Projects</button> <!-- button to scroll to projects -->
-                <button>Contact</button> <!-- button to scroll to contact -->
+                <button><a href="#projects">Projects</a></button> <!-- button to scroll to projects -->
+                <button><a href="Anas's_CV.pdf" download="Anas_Shafiq_CV.pdf">MY CV</a></button> 
+                <button><a href="#contact">Contact</a></button> <!-- button to scroll to contact -->
             </div>
             
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section class="projects">
+    <section class="projects" id="projects">
         <div class="container">
             <p class="section-label">MY WORK</p>
             <h2 class="section-title">Featured Projects</h2>
             
             <div class="projects-grid"> <!-- flex layout for project cards -->
                 <div class="project-card">
-                    <div class="project-icon">⚙️</div>
-                    <h3>Project One</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores libero earum hic minus voluptatem labore at repudiandae nemo maxime dolorum? Distinctio aliquid voluptatem deserunt expedita voluptate delectus impedit asperiores iure.</p>
+                    <div class="project-icon">🚵</div>
+                    <h3>Fictional esports website</h3>
+                    <p>Fictional Esports Website is a full-stack course work web project I developed during my first year of university. The platform is designed to showcase esports content and functionality using HTML, CSS, Bootstrap, PHP, and MySQL. The frontend was built for responsive and modern user interaction, while the backend handles data management and dynamic features. I used AI assistance to help integrate the PHP backend with the frontend and ensure smooth database connectivity. This project reflects my early experience in full-stack development and building database-driven web applications.</p>
+                    <p>CLICK<a href="https://fictional-esports-website.vercel.app/">HERE</a>FOR DEMO</p>
                 </div>
                 
                 <div class="project-card">
-                    <div class="project-icon">📱</div>
-                    <h3>Project Two</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vel sit eligendi a soluta possimus deserunt sed ipsam. Ipsa recusandae possimus assumenda animi vitae molestiae tempora dolorem suscipit ipsum debitis.</p>
+                    <div class="project-icon">🚗</div>
+                    <h3>Car rental management system</h3>
+                    <p>This project is a first-year, second-semester university coursework project. It is a console-based Car Rental Management System built in C# that allows users to register, log in securely, and book rental cars with optional extras.
+                        The system applies basic Object-Oriented Programming concepts, including classes, file handling, input validation, and a menu-driven interface. Customer accounts, bookings, and rented car records are stored using text-based file management.
+                        This project demonstrates my early experience in building structured, modular applications with authentication, pricing logic, and real-world booking functionality.</p>
+                        <p>CLICK <a href="https://github.com/anasshafique/Car-rental-management-system-app">HERE</a> FOR CODE</p>
                 </div>
                 
                 <div class="project-card">
-                    <div class="project-icon">🔧</div>
-                    <h3>Project Three</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quis nihil saepe deleniti iure quae odit quisquam labore id dolore facere placeat tenetur delectus blanditiis expedita, non ipsam. Placeat, eveniet.</p>
+                    <div class="project-icon">📚</div>
+                    <h3>Game Library & Player Statistics Manager</h3>
+                    <p>The Game Library & Player Statistics Manager is a C# console application developed during my second year, second semester of university. The system is designed to manage player profiles, their game libraries, and performance statistics, allowing activity tracking such as hours played and high scores across different games.
+
+                        This project demonstrates key computer science concepts, including Object-Oriented Programming (OOP), data structures, searching and sorting algorithms, and file persistence, showcasing my ability to design structured, data-driven applications.</p>
+                    <p>CLICK <a href="https://github.com/anasshafique/Game-library-management-app/tree/master">HERE</a> FOR CODE</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section class="skills">
+    <section class="skills"  id="skills">
         <div class="container">
             <p class="section-label">MY EXPERTISE</p>
             <h2 class="section-title">Skills</h2>
@@ -127,7 +137,7 @@
     </section>
 
     <!-- About Section -->
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <p class="section-label">WHO I AM</p>
             <h2 class="section-title">About Me</h2>
@@ -143,7 +153,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container">
             <p class="section-label">GET IN TOUCH</p>
             <h2 class="section-title">Contact</h2>
@@ -154,10 +164,10 @@
             </p>
 
             <div class="contact-grid"> <!-- flex layout for contact boxes -->
-                <a href="#" class="contact-box">GitHub</a>
-                <a href="#" class="contact-box">LinkedIn</a>
-                <a href="#" class="contact-box">Instagram</a>
-                <a href="mailto:your@email.com" class="contact-box">Email</a>
+                <a href="https://github.com/anasshafique" class="contact-box">GitHub</a>
+                <a href="https://www.linkedin.com/in/anas-shafiq-253b29318/" class="contact-box">LinkedIn</a>
+                <a href="https://www.instagram.com/_anas.here_?igsh=djlwdGwzbTMxN3k0" class="contact-box">Instagram</a>
+                <a href="mailto:anasshafique30@gmail.com" class="contact-box">Email</a>
             </div>
         </div>
     </section>
@@ -168,5 +178,7 @@
     </footer>
 
 </main>
+
+
 </body>
 </html>

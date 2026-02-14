@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+
+
 }
 
 /* Body styling */
@@ -12,10 +15,13 @@ body{
     color: #e2e8f0;
     background-image: radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
     background-size: 30px 30px;
+    letter-spacing: 1px;
 }
 
 /* Navbar */
 nav {
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,7 +76,7 @@ nav ul li a:hover {
 .hero > .container p{
     text-align: center;
     color: #a7bed8;
-    letter-spacing: 1px;
+    
 }
 
 .hero > .container .decor{
@@ -116,6 +122,11 @@ nav ul li a:hover {
     box-shadow: 0 4px 12px #0c2442;
 }
 
+.hero-button a {
+    text-decoration: none;
+    color: #a7bed8;
+    
+}
 /* Projects Section */
 .projects {
     background-color: #0C2C55;
@@ -126,7 +137,6 @@ nav ul li a:hover {
 
 .projects .container {
     max-width: 1200px;
-   
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -134,10 +144,10 @@ nav ul li a:hover {
 }
 
 .section-label {
-    color: #a7bed8;
+    color: #a7bed8; 
     font-size: 0.85rem;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 5px;
     margin-bottom: 10px;
 }
 
@@ -155,15 +165,19 @@ nav ul li a:hover {
 
 .project-card {
     flex: 1; /* equal width cards */
+    
     background-color:  #162e4e;
     padding: 40px 30px; /* spacing inside card */
-    border-radius: 10%;
+    border-radius: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+
+
 
 .project-card:hover {
     transform: translateY(-5px);
@@ -182,7 +196,7 @@ nav ul li a:hover {
 }
 
 .project-card p {
-    color: #a7bed8;
+    color: #a7bed8; 
     line-height: 1.6;
 }
 
@@ -321,3 +335,141 @@ nav ul li a:hover {
     color: #a7bed8;
     letter-spacing: 1px;
 }
+
+
+    @media (min-width: 319px) and (max-width: 800px) {
+      body {
+        background-color: lightsalmon;
+      }
+    
+      nav {
+    position: fixed;
+   
+    display: flex;
+    flex-direction: column;
+    
+    
+    padding: 20px 60px;
+    background-color:#0C2C55;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+nav ul {
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+
+    }
+
+    @media (min-width: 800px) and (max-width: 1200px) {
+      body {
+        background-color: powderblue;
+      }
+
+      .hero{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 200px;
+    height: 100vh;
+}
+
+      /* Projects Section */
+.projects {
+    background-color: #0C2C55;
+    padding: 200px 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.projects .container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-label {
+    color: #a7bed8; 
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+}
+
+.projects-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 75%;
+}
+
+.project-card {
+    flex: 1; /* equal width cards */
+    
+    background-color:  #162e4e;
+    padding: 40px 30px; /* spacing inside card */
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* hover effect */
+}
+
+.project-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #a7bed8; 
+    line-height: 1.6;
+}
+
+
+
+    }
+
+    @media (min-width: 1201px) and (max-width: 1600px) {
+      body {
+        background-color: limegreen;
+      }
+    }
+
+    @media (min-width: 1601px) {
+      body {
+        background-color: seagreen;
+      }
+    }
