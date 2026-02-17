@@ -275,10 +275,13 @@ nav ul li a:hover {
 /* Skill proficiency widths */
 .skill-fill.html { width: 80%; }
 .skill-fill.css { width: 75%; }
+.skill-fill.Bs { width: 50%; }
 .skill-fill.csharp { width: 85%; }
-.skill-fill.postgres { width: 10%; }
 .skill-fill.js { width: 6%; }
-.skill-fill.Bs { width: 50%; ; }
+.skill-fill.py { width: 20%; }
+.skill-fill.postgres { width: 10%; }
+
+
 
 /* About Section */
 .about {
