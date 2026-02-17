@@ -99,7 +99,31 @@ nav ul li a:hover {
     gap: 25px;
 }
 
-.hero > .container button{
+.hero-btn {
+    display: inline-block; /**/
+    margin-top: 2rem;
+    padding: 12px 30px;
+    width: 140px;
+    background-color: #162e4e;
+    border: none;
+    text-decoration: none;
+    color: #a7bed8;
+    font-weight: normal;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.hero-btn:hover {
+    background-color: #183c6b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px #0c2442;
+}
+/*.hero > .container button{
     margin-top: 2rem;
     padding: 12px 30px;
     width: 140px; 
@@ -114,9 +138,9 @@ nav ul li a:hover {
     cursor: pointer;
     border-radius: 4px;
     transition: all 0.3s ease;
-}
+}*/
 
-.hero > .container button:hover {
+/*.hero > .container button:hover {
     background-color: #183c6b;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px #0c2442;
@@ -126,7 +150,9 @@ nav ul li a:hover {
     text-decoration: none;
     color: #a7bed8;
     
-}
+}*/
+
+
 /* Projects Section */
 .projects {
     background-color: #0C2C55;
@@ -383,7 +409,9 @@ nav ul li a:hover {
     gap: 1px;
 }
 
-.hero > .container button{
+
+
+/*.hero > .container button{
     margin-top: 4rem;
     padding: 25px;
     width: 350px;
@@ -398,13 +426,13 @@ nav ul li a:hover {
     cursor: pointer;
     border-radius: 4px;
     transition: all 0.3s ease;
-}
+} */
 
-.hero > .container button:hover {
+/*.hero > .container button:hover {
     background-color: #183c6b;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px #0c2442;
-}
+}*/
 
 .hero-button a {
     text-decoration: none;
